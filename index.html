@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator BMI</title>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <h1>Kalkulator <span>BMI</span></h1>
+            <div class="input_container">
+                <input type="number" id="weight">
+                <span class="unit">kg</span>
+            </div>
+            <input type="range" min="1" max="300" value="150" id="range_weight">
+            <div class="input_container">
+                <input type="number" id="height">
+                <span class="unit">cm</span>
+            </div>
+            <input type="range" min="1" max="300" value="150" id="range_height">
+            <button id="result">Oblicz</button>
+            <span id="info">...</span>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
